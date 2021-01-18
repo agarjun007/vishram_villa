@@ -7,6 +7,8 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
@@ -36,6 +38,8 @@
     <link rel="stylesheet" href="assets/css/responsive.css" />
 
     <link rel="icon" type="image/png" href="assets/img/favicon.png" />
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
 
     <title>vishram village- Hotel & Resort</title>
   </head>
@@ -340,7 +344,6 @@
         </ul>
       </div>
     </section>         
-    </div>
 
     <section class="explore-area pt-170 pb-100">
       <div class="container">
@@ -375,7 +378,7 @@
       </div>
     </section>
 
-    <section class="facilities-area pb-60">
+    <section class="facilities-area pb-60 ">
       <div class="container">
         <div class="section-title">
           <span>Facilities</span>
@@ -439,17 +442,19 @@
             </div>
           </div>
         </div>
-      </div>
+      </div>      
     </section>
 
-    <section class="incredible-area ptb-140 jarallax">
+    <section class="incredible-area ptb-140 jarallax parentSection ">
+      <div class="iframeClass" id="iframeId" >
+        <i class="fas fa-times" id="closeTag" style="visibility: hidden;" ></i>
+      </div>
       <div class="container">
         <div class="incredible-content">
           <a
-            href="https://youtu.be/Xy5YCUpdaz0"
-            class="video-btn popup-youtube"
+            class="video-btn popup-youtube" 
           >
-            <i class="flaticon-play-button"></i>
+            <i class="flaticon-play-button" id="videoFrame" style="cursor: pointer;" ></i>
           </a>
           <h2><span>Incredible!</span> Are you coming today</h2>
           <p>
@@ -847,6 +852,28 @@
     <script src="assets/js/ajaxchimp.min.js"></script>
 
     <script src="assets/js/custom.js"></script>
+
+
+    <script>
+      document.getElementById("videoFrame").addEventListener("click",function(){
+        let div = document.createElement("div");
+        let iframe = document.createElement("iframe")
+        iframe.classList.add("distroy") 
+        iframe.src = "https://www.youtube.com/embed/Xy5YCUpdaz0";
+        iframe.allow = "autoplay";
+        div.appendChild(iframe);
+        document.getElementById("iframeId").appendChild(div)
+        document.getElementById("closeTag").style.visibility = "visible";
+      });
+
+      document.getElementById("closeTag").addEventListener("click",function(){
+        document.querySelector(".distroy").remove();
+        document.getElementById("closeTag").style.visibility = "hidden";
+
+      })
+      
+    </script>
+
   </body>
 
 </html>
