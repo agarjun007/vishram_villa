@@ -38,7 +38,14 @@
 
 #closeTag{
   margin-left: 50rem;
-  font-size:larger;
+  font-size:x-large;
   color:white;
   cursor: pointer;
+}
+
+.animation{
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
 }

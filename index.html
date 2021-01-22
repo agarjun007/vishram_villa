@@ -469,10 +469,11 @@
     <section class="incredible-area ptb-140 jarallax parentSection">
       <div class="iframeClass" id="iframeId">
         <i class="fas fa-times" id="closeTag" style="visibility: hidden"></i>
+        <iframe id="iframeTagVideo" width="560" height="315" src="https://www.youtube.com/embed/Xy5YCUpdaz0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: none;" ></iframe>
       </div>
       <div class="container">
         <div class="incredible-content">
-          <a class="video-btn popup-youtube data-bs-toggle="modal" data-bs-target="#staticBackdrop" >
+          <a class="video-btn popup-youtube data-bs-target="#staticBackdrop" >
             <i
               class="flaticon-play-button"
               id="videoFrame"
@@ -906,22 +907,16 @@
     <script src="assets/js/custom.js"></script>
 
     <script>
-      // document.getElementById("videoFrame").addEventListener("click",function(){
-      //   let div = document.createElement("div");
-      //   let iframe = document.createElement("iframe")
-      //   iframe.classList.add("distroy")
-      //   iframe.src = "https://www.youtube.com/embed/Xy5YCUpdaz0";
-      //   iframe.allow = "autoplay";
-      //   div.appendChild(iframe);
-      //   document.getElementById("iframeId").appendChild(div)
-      //   document.getElementById("closeTag").style.visibility = "visible";
-      // });
+      document.getElementById("videoFrame").addEventListener("click",function(){
+        document.getElementById("iframeTagVideo").style.display = "block" 
+        document.getElementById("closeTag").style.visibility = "visible";
+      });
 
-      // document.getElementById("closeTag").addEventListener("click",function(){
-      //   document.querySelector(".distroy").remove();
-      //   document.getElementById("closeTag").style.visibility = "hidden";
+      document.getElementById("closeTag").addEventListener("click",function(){
+        document.getElementById("iframeTagVideo").style.display = "none" 
+        document.getElementById("closeTag").style.visibility = "hidden";
 
-      // })
+      })
 
       // var myModal = document.getElementById('myModal');
       // var myInput = document.getElementById('myInput');
