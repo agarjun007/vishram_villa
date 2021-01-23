@@ -930,7 +930,10 @@ Verandas on the garden with  lake side view Hot water 24 h/24. LCD TV 19’ with
       });
 
       document.getElementById("closeTag").addEventListener("click",function(){
-        document.getElementById("iframeTagVideo").style.display = "none" 
+        let iframe = document.getElementById("iframeTagVideo");
+        iframe.src = iframe.src;
+        iframe.style.display = "none"
+        // document.getElementById("iframeTagVideo").style.display = "none" 
         document.getElementById("closeTag").style.visibility = "hidden";
 
       })
