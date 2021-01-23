@@ -49,3 +49,11 @@
   transition-timing-function: linear;
   transition-delay: 1s;
 }
+
+@media only screen and (max-width: 767px){
+  
+  .tabs_item .preview-item {
+    transform: translate(0%) !important;
+}
+
+}
