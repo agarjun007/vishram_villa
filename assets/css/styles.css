@@ -11,41 +11,102 @@
 }
 
 .bookTable {
-  background-image: url("../img/bookTable/5a707f4e46a2886d018b4569.jpeg");
+  background-image: url('../img/bookTable/5a707f4e46a2886d018b4569.jpeg');
 }
 
 /* body{
   position: relative;
 } */
-.parentSection{
-  position:relative;
+.parentSection {
+  position: relative;
 }
 
-.iframeClass{
+.iframeClass {
   position: absolute;
   top: 30%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  z-index:999;
-  padding:1rem;
+  z-index: 999;
+  padding: 1rem;
   /* background-color: rgba(0, 0, 0, 0.623); */
 }
 
-.iframeClass iframe{
+.iframeClass iframe {
   width: 60vw;
   height: 50vh;
 }
 
-#closeTag{
+#closeTag {
   margin-left: 50rem;
-  font-size:x-large;
-  color:white;
+  font-size: x-large;
+  color: white;
   cursor: pointer;
 }
 
-.animation{
+.animation {
   transition-property: all;
   transition-duration: 2s;
   transition-timing-function: linear;
   transition-delay: 1s;
+}
+
+@media only screen and (max-width: 1024px) {
+  .tabs_item .preview-item {
+    transform: translate(0%) !important;
+  }
+  /* .packages .container {
+    width: 18rem;
+  }
+   */
+  .packages .card {
+    width: 29rem !important;
+  }
+
+  .iframeClass {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    padding: 1rem;
+    /* background-color: rgba(0, 0, 0, 0.623); */
+  }
+
+  .iframeClass iframe {
+    width: 65vw;
+    height: 30vh;
+  }
+  #closeTag {
+    margin-left: 39rem !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .tabs_item .preview-item {
+    transform: translate(0%) !important;
+  }
+  .packages .container {
+    width: 18rem;
+  }
+
+  .packages .card {
+    width: 18rem !important;
+  }
+
+  .iframeClass {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    padding: 1rem;
+    /* background-color: rgba(0, 0, 0, 0.623); */
+  }
+
+  .iframeClass iframe {
+    width: 100vw;
+    height: 30vh;
+  }
+  #closeTag {
+    margin-left: 18rem !important;
+  }
 }
