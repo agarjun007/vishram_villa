@@ -92,6 +92,10 @@
   #closeTag {
     margin-left: 39rem !important;
   }
+  .eorik-slider-area .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 85px;
+    margin-bottom: 0px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .tabs_item .preview-item {
@@ -121,5 +125,12 @@
   }
   #closeTag {
     margin-left: 18rem !important;
+  }
+  .eorik-slider-area .owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: 85px;
+    margin-bottom: 0px;
+  }
+  .single-facilities-wrap {
+    height: auto;
   }
 }
