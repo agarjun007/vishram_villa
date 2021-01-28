@@ -1,3 +1,16 @@
+.eorik-slider-item .eorik-slider-text h1 {
+  margin-top: 138px;
+  margin-bottom: 13px;
+}
+
+.single-facilities-wrap {
+  height: 560px;
+}
+
+.eorik-slider-area .owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 85px;
+  margin-bottom: -27px;
+}
 .page-title-area {
   background-image: url('/assets/img/ayurveda_Yoga/Ayurveda\ Shirodara-vv1.00.jpg');
 }
