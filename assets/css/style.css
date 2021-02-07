@@ -4619,6 +4619,13 @@ textarea.form-control {
   overflow: hidden;
   text-align: center;
 }
+.yoga-style{
+  background-image: url(../img/yoga/yoga_banner.jpg);
+}
+.ayurveda-style{
+  background-image: url(../img/ayurveda/ayurveda_banner.jpg);
+
+}
 .about-style{
     background-image: url(../img/about_banner.jpg);
 }
